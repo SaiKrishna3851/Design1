@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    font-family: 'Lexend Deca','Big Shoulders Display', sans-serif;
+    Font-size: 15px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 12px;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 50px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 900px;
+    box-shadow: -10px 10px 30px rgba(0,0,0,0.3);
+}
+
+.container .box{
+    position: relative;
+    height: 360px;
+    width: 230px;
+}
+.container .card-1{
+    background: var(--Bright-orange);
+}
+.container .card-1 img{
+    width: 40px;
+    margin: 25px 30px;
+}
+.container .card-1 h2{
+    font-family: 'Big Shoulders Display';
+    position: relative;
+    top: 0;
+    left: 30px;
+    color: var(--Very-light-gray);
+}
+.container .card-1 p{
+    font-family: 'Lexend Deca';
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: var(--Transparent-white);
+    line-height: 1.5;
+    width: 70%;
+}
+.container .card-1 .btn-1{
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: var(--Bright-orange);
+    font-family: 'Lexend Deca';
+}
+.container .card-2{
+    background: var(--Dark-cyan);
+}
+.container .card-2 img{
+    width: 40px;
+    margin: 25px 30px;
+}
+.container .card-2 h2{
+    font-family: 'Big Shoulders Display';
+    position: relative;
+    top: 0;
+    left: 30px;
+    color: var(--Very-light-gray);
+}
+.container .card-2 p{
+    font-family: 'Lexend Deca';
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: var(--Transparent-white);
+    line-height: 1.5;
+    width: 70%;
+}
+.container .card-2 .btn-2{
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: var(--Dark-cyan);
+    font-family: 'Lexend Deca';
+}
+.container .card-3{
+    background: var(--Very-dark-cyan);
+}
+.container .card-3 img{
+    width: 40px;
+    margin: 25px 30px;
+}
+.container .card-3 h2{
+    font-family: 'Big Shoulders Display';
+    position: relative;
+    top: 0;
+    left: 30px;
+    color: var(--Very-light-gray);
+}
+.container .card-3 p{
+    font-family: 'Lexend Deca';
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: var(--Transparent-white);
+    line-height: 1.5;
+    width: 74%;
+}.container .card-3 .btn-3{
+    position: relative;
+    top: 60px;
+    left: 30px;
+    color: var(--Very-dark-cyan);
+    font-family: 'Lexend Deca';
+}
+
+
+/* Media query */
+@media (max-width:375px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+}
